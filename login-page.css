@@ -3,3 +3,89 @@
 body {
     background-color: #364150 !important;
 }
+
+.banner {
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+}
+.banner img {
+    padding: 15px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+.foot {
+    color: #7a8ca5;
+    font-size: 13px;
+}
+.form-container form {
+    background-color: #eceef1;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    border-radius: 2px;
+    position: relative;
+}
+.taap-login .heading {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+.taap-login input[type="text"], .taap-login input[type="password"] {
+    background-color: #dde3ec;
+    height: 43px;
+    color: #8290a3;
+    border: 1px solid #dde3ec;
+    width: 330px;
+    font-size: 15px;
+    padding: 12px;
+}
+.taap-login .mid {
+    padding: 20px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+input.login {
+    color: #FFF;
+    background-color: #32c5d2;
+    border: 1px solid #32c5d2;
+    padding: 14px 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+label {
+    color: #8290a3;
+    transform: translateX(-5px);
+}
+
+.forpass {
+    position: absolute;
+    right: 30px !important;
+}
+
+.homebtn {
+    position: absolute;
+    background: #6c7a8d;
+    left: 0;
+    bottom: -40px;
+    width: 390px;
+    padding: 20px;
+}
+.homebtn a {
+    font-weight: 600;
+    font-size: 14px;
+    color: #c3cedd;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}

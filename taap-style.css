@@ -1,0 +1,91 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.taap-nav {
+    height: 50px;
+    background: #2b3643;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.taap-nav .brand {
+    margin-left: 50px;
+}
+.taap-nav .links .link {
+    color: #c6cfda;
+}
+.taap-nav .links .link:hover {
+
+}
+.taap-nav .links {
+    display: flex;
+    gap: 20px;
+}
+
+
+.container-home {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+div.h2 {
+    font-size: 25px;
+}
+.collapseable-card {
+    border: 1px solid #32c5d2;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.collapseable-card .card-controll {
+    background: #32c5d2;
+    width: inherit;
+    display: flex;
+    gap: 10px;
+    padding: 8px 12px;
+}
+.card-controll .card-title, .card-controll a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+
+.collapseable-card .card-body {
+    display: block;
+    margin: 0;
+    background: #6a32a3;
+    height: 200px;
+    width: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.collapseable-card.active .card-body {
+    height: 0px;
+}
+
+
+
+
+
+
+
+.taap-green {
+    color: #32c5d2 !important;
+}
+.taap-bg-green {
+    background: #32c5d2 !important;
+}

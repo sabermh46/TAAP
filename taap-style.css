@@ -174,18 +174,52 @@ a.hover-under:hover {
 
 
 
+.taap-form {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.taap-form div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+div.label {
+    width: 250px;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+}
+.taap-form div span {
+    font-size: 12px;
+}
+
+.taap-form div input, .taap-form div select {
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.34);
+    min-width: 200px;
+}
 
 
+.taap-form div input {
+    width: 250px;
+}
 
+div.bigSubmit {
+    padding: 20px;
+    margin: 0;
+    margin-top: 30px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e7ecf1;
+    padding-left: 250px;
+}
 
-
-
-
-
-
-
-
-
+.bigSubmit input {
+    padding: 7px 10px;
+    border-color: rgba(0, 0, 0, 0.295);
+    cursor: pointer;
+}
 
 
 

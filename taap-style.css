@@ -167,6 +167,7 @@ a.hover-under:hover {
     border: none;
     padding: 10px 12px;
     color: aliceblue;
+    cursor: pointer;
 }
 .big {
     font-size: 22px !important;
@@ -219,6 +220,13 @@ div.bigSubmit {
     padding: 7px 10px;
     border-color: rgba(0, 0, 0, 0.295);
     cursor: pointer;
+}
+
+
+.two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 

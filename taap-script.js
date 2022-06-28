@@ -1,7 +1,7 @@
 
 
 
-var cardsbtn = document.querySelectorAll('.collapseable-card > .card-controll > .buttons');
+var cardsbtn = document.querySelectorAll('.collapseable-card > .card-controll > .buttons > .up-down');
 
 console.log(cardsbtn);
 cardsbtn.forEach((btn, i)=>{

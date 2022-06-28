@@ -48,13 +48,16 @@ div.h2 {
     align-items: center;
     width: 100%;
     position: relative;
+    transition: 0.5s;
 }
 .collapseable-card .card-controll {
+    transform: translateX(0.5px);
     background: #32c5d2;
     width: inherit;
     display: flex;
     gap: 10px;
     padding: 8px 12px;
+    position: relative;
 }
 .card-controll .card-title, .card-controll a {
     text-decoration: none;
@@ -65,16 +68,108 @@ div.h2 {
 
 
 .collapseable-card .card-body {
-    display: block;
-    margin: 0;
-    background: #6a32a3;
-    height: 200px;
     width: 100%;
     transition: 0.5s;
     overflow: hidden;
+    padding: 20px;
 }
 .collapseable-card.active .card-body {
-    height: 0px;
+    height: 0px !important;
+    padding: 0;
+}
+.collapseable-card.active .card-controll .buttons .up-down .icon {
+    transform: translateY(8px) rotate(135deg);
+}
+
+
+
+
+.buttons {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+
+.up-down .icon {
+    height: 11px;
+    aspect-ratio: 1;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: translateY(2px) rotate(-45deg);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.cross .icon {
+    color: white;
+    cursor: pointer;
+}
+
+
+.card-bodyList div:not(.hr){
+    margin-left: 200px;
+}
+div.hr {
+    border-top: 1px solid red;
+}
+.card-bodyList div:nth-child(1) ul {
+    list-style: none;
+    padding: 10px 0;
+}
+.list-line ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+.list-line.inpart ul li a{
+    font-size: 13px;
+    font-weight: 700;
+}
+.list-line ul li a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+div.bold ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #22313F;
+}
+a.hover-under:hover {
+    border-bottom: 1px solid black !important;
+}
+
+
+.body-part {
+    padding: 10px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.body-part select {
+    width: 250px;
+    padding: 5px;
+}
+.label200 {
+    width: 200px;
+    text-align: right;
+}
+
+.taap-btn {
+    border: none;
+    padding: 10px 12px;
+    color: aliceblue;
+}
+.big {
+    font-size: 22px !important;
 }
 
 
@@ -83,9 +178,42 @@ div.h2 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+.taap-yellow {
+    color: #c49f47 !important;
+}
+.taap-black {
+    color: #22313F !important;
+}
+.taap-dgreen {
+    color: #4DB3A2 !important;
+}
+.taap-gold {
+    color: #E87E04 !important;
+}
+.taap-blue {
+    color: #3598dc !important;
+}
+.taap-red {
+    color: #e7505a !important;
+}
 .taap-green {
     color: #32c5d2 !important;
 }
 .taap-bg-green {
     background: #32c5d2 !important;
+}
+.taap-text {
+    color: #666;
+    font-weight: 300;
 }

@@ -146,7 +146,8 @@ div.bold ul li a {
     color: #22313F;
 }
 a.hover-under:hover {
-    border-bottom: 1px solid black !important;
+    text-decoration: underline !important;
+    text-decoration-color: #22313F !important;
 }
 
 

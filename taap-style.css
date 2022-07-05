@@ -79,10 +79,8 @@ div.h2 {
     overflow: hidden;
     padding: 20px;
     transform-origin: top center;
-    height: max-content;
 }
 .collapseable-card.active .card-body {
-    height: 0px;
     padding: 0px;
 }
 .collapseable-card.active .card-controll .buttons .up-down .icon {

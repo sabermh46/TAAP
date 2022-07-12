@@ -303,6 +303,15 @@ a.hover-under:hover {
     aspect-ratio: 1;
 }
 
+.side-bar-menu a {
+    text-decoration: none;
+    color: #c6cfda;
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px solid white;
+    display: block;
+}
+
 
 
 /**/

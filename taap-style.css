@@ -53,7 +53,7 @@ div.h2 {
     align-items: center;
     width: 100%;
     position: relative;
-    transition: 0.5s;
+    transition: 0.5s cubic-bezier(.33,-0.33,.47,1);
 }
 .collapseable-card .card-controll {
     transform: translateX(0.5px);
@@ -75,7 +75,7 @@ div.h2 {
 .collapseable-card .card-body {
     position: relative;
     width: 100% !important;
-    transition: all 0.5s;
+    transition: all 0.5s cubic-bezier(.33,-0.33,.47,1);
     overflow: hidden;
     padding: 20px;
     transform-origin: top center;
@@ -308,10 +308,19 @@ a.hover-under:hover {
     color: #c6cfda;
     padding: 10px 20px;
     width: 100%;
-    border: 1px solid white;
     display: block;
+    transition: 0.3s;
 }
 
+ul.sub-link li a {
+    width: 95%;
+    border-radius: 10px;
+    padding-left: 40px;
+    margin: 3px auto;
+}
+.side-bar-menu a:hover, .side-bar-menu a.active {
+    background: #2b3643;
+}
 
 
 /**/

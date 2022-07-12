@@ -47,3 +47,25 @@ crossbtns.forEach((btn, i)=>{
         cardBody.remove();
     })
 })
+
+
+
+var menues = document.querySelectorAll('.menu > a.link');
+console.log(menues);
+
+menues.forEach((menu, i)=>{
+
+    console.log();
+
+    menu.addEventListener('click', (e)=>{
+
+        menu.classList.toggle('active');
+        menues.forEach((menu, j)=>{
+            if(i != j){
+                menu.classList.remove('active');
+            }
+
+        })
+
+    })
+});

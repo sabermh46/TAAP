@@ -184,6 +184,14 @@ a.hover-under:hover {
 }
 
 
+.crd-header {
+    font-size: 25px;
+    font-weight: 300;
+    color: #22313F;
+    padding: 15px 20px;
+}
+
+
 /* TAAP FORMS */
 
 .taap-form {
@@ -211,6 +219,7 @@ a.hover-under:hover {
         height: 30px;
         border: 1px solid rgba(0, 0, 0, 0.34);
         min-width: 200px;
+        padding: 0 10px;
     }
     
     
@@ -256,7 +265,7 @@ a.hover-under:hover {
         gap: 3px !important;
         align-items: center;
     }
-    .taap-form.taap-boolean input[type="radio"] {
+    .taap-form input[type="radio"] {
         width: 30px !important;
         height: 15px;
         min-width: 10px !important;

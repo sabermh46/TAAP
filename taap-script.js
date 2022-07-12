@@ -21,12 +21,15 @@ var cB = document.querySelectorAll('.collapseable-card .card-body');
 
 
 cardsbtn.forEach((btn, i)=>{
-    var cardBody = document.querySelector(`.collapseable-card:nth-child(${i+2})`);
-    var cBB = document.querySelector(`.collapseable-card:nth-child(${i+2}) > .card-body`);
+    var p1 = btn.parentElement;
+    var p2 = p1.parentElement;
+    var p3 = p2.parentElement;
+    var cBB = p3.children[1];
 
+    console.log(cBB);
 
     btn.addEventListener('click', ()=>{
-        cardBody.classList.toggle('active');
+        p3.classList.toggle('active');
         if(++clicked[i]%2) {
             cBB.style.height = '0px';
         }

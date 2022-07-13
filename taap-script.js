@@ -50,7 +50,7 @@ crossbtns.forEach((btn, i)=>{
 
 
 
-var menues = document.querySelectorAll('.menu > a.link');
+var menues = document.querySelectorAll('.menu');
 console.log(menues);
 
 menues.forEach((menu, i)=>{
@@ -60,6 +60,7 @@ menues.forEach((menu, i)=>{
     menu.addEventListener('click', (e)=>{
 
         menu.classList.toggle('active');
+
         menues.forEach((menu, j)=>{
             if(i != j){
                 menu.classList.remove('active');

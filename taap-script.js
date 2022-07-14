@@ -31,10 +31,12 @@ cardsbtn.forEach((btn, i)=>{
     btn.addEventListener('click', ()=>{
         p3.classList.toggle('active');
         if(++clicked[i]%2) {
+            cBB.style.padding = '0px';
             cBB.style.height = '0px';
         }
         else {
-            cBB.style.height = `${ ht[i] }px`;
+            cBB.style.padding = '20px';
+            cBB.style.height = `${ ht[i] + 20 }px`;
         }
     })
 })
@@ -51,22 +53,18 @@ crossbtns.forEach((btn, i)=>{
 
 
 var menues = document.querySelectorAll('.menu');
-console.log(menues);
+var menuLinks = document.querySelectorAll('.menu > a.link');
 
-menues.forEach((menu, i)=>{
 
-    console.log();
-
-    menu.addEventListener('click', (e)=>{
-
-        menu.classList.toggle('active');
-
+menuLinks.forEach((men, a)=>{
+    men.addEventListener('click', (e)=>{
+        var parent = men.parentElement;
+        parent.classList.toggle('active');
         menues.forEach((menu, j)=>{
-            if(i != j){
+            if(a != j){
                 menu.classList.remove('active');
             }
-
         })
-
     })
-});
+
+})

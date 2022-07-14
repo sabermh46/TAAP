@@ -36,7 +36,7 @@ cardsbtn.forEach((btn, i)=>{
         }
         else {
             cBB.style.padding = '20px';
-            cBB.style.height = `${ ht[i] + 20 }px`;
+            cBB.style.height = `${ ht[i] }px`;
         }
     })
 })

@@ -323,7 +323,7 @@ ul.sub-link li a {
     margin: 2px 0;
 }
 ul.sub-link li a:hover, ul.sub-link li a.active {
-    background: #32c5d25c;;
+    background: #32c5d25c;
     transform: translateX(3px);
 }
 .menu ul.sub-link {
